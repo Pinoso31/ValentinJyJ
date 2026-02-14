@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín? ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="tabs">
+        <button class="tab-btn active" onclick="openTab(0)">💌 Propuesta</button>
+        <button class="tab-btn" onclick="openTab(1)">📖 Nuestra Historia</button>
+    </div>
+
+    <!-- Pestaña 1: Propuesta -->
+    <div id="tab0" class="tab-content active">
+        <div class="proposal">
+            <h1>¿Quieres ser mi San Valentín?</h1>
+            <p class="subtitle">Hoy 14 de febrero estamos por primera vez celebrando san valentin ¿Quieres ser mi san valentin por la eternidad? </p>
+            
+            <div class="buttons">
+                <button id="siBtn" class="si">Claro que si precioso! 🤍</button>
+                <button id="noBtn" class="no">Ño</button>
+            </div>
+            
+            <div id="mensajeNo" class="mensaje-no"></div>
+        </div>
+    </div>
+
+        <!-- Pestaña 2: Nuestra Historia (estilo periódico) -->
+    <div id="tab1" class="tab-content">
+        <div class="newspaper">
+            <header class="newspaper-header">
+                <div class="logo">❤️</div>
+                <h1>Bienvenida mi amor bello, te presento <p>" HISTORIA DE AMOR J Y J "</h1></p>
+                <p class="date">14 de febrero de 2026</p>
+            </header>
+            
+            
+            <div class="content">
+                <div class="column">
+                                    
+                <div class="ComentBTN" style="margin-top: 40px;">
+                    <button id="comentBtn">Entra aquí mi reina :)</button>
+                </div>
+                    <img src="Fotitos-valentinWeb/24DiciembreDateHands.jpg" alt="Nosotros" class="foto-principio">
+                    
+                    <div class = "EventTXT" style = " margin-top: 40px;"
+                        <h3 id = "TxtEvent"> Eventos Importantes</h3>
+                    </div>
+                    <!-- CARDS INTERACTIVAS -->
+                    <div class="events-grid">
+                        <div class="event-card" data-title="Primera cita ❤️" data-image="Fotitos-valentinWeb/FotosPrimeraCIta.jpg" data-text="Si bien, nosotros teniamos tiempo de no vernos en persona desde tu cumple #14, 
+                        un 4 de octubre decidí invitarte a una función del teatro de la obra de la cenicienta donde por primera vez salimos, donde fuimos mi mamá, TU Y YO, fue algo tan hermoso que recuerdo para matar el aburrimiento y quebrar el hielo te hice una pequeña broma
+                        agagjakg, de una supuesta mancha en tu vestido, lo cual no era del todo cierto, pero si algo que es me divertí haciendo esa broma, pero algo tan bonito de ese día es que tu y yo combinamos ropa de celeste de verdad me gustó haber 
+                        combinado nuestra prenda y lo que amaré siempre hacer  por el resto de mi vida. 
+                        ">
+                            <h4>Una salidita :)</h4>
+                            <p>04/10/2025</p>
+                        </div>
+                        
+                        <div class="event-card" data-title="Primer beso 🌹" data-image="Fotitos-valentinWeb/PrimerBeso.jpg" data-text="Ese día para mi fue muy especial por que nos volvimos a ver de nuevo, donde nuestras almass otra vez se juntaron, 
+                        nuestros cuerpos otra vez se sintieron el uno a el otro, esa vez nos dimos nuestro primer beso y no fue un pico cualquiera sino, que un beso que wow, experimentamos algo tan bonito e intimo y no olvidemos que ese día aprendistes a besar conmigo 
+                        y aprendimos a besar juntos, besar tus labios es algo tan bonito y lo que quiero seguir haciendo por el resto de mi vida mi amor.">
+                            <h4>Nuestro primer beso oficial</h4>
+                            <p>20/03/2025</p>
+                        </div>
+                        
+                        <div class="event-card" data-title="" data-image="Fotitos-valentinWeb/OficialmenteNV.jpg" data-text="Un 24 de diciembre exactamente a las 1:30 de la tarde tu y yo pasamos una linda tarde, que de verdad cuando fui sentí un miedo grande en el corazón 
+                        sobrepensando en que podría pasar, pero a al final ese día nos intercambiamos unos regalos que al final no fueron sorpresa jajaj , pero si me gustó ese regalo que tenías para mí ese 24 de diciembre nosotros oficialmente nos hicimos novios, te pedi si 
+                        podía ser tu novio hasta videos tenemos que jaja salimos muy bonitos   "sí" frente a todos. El mejor día de mi vida hasta ahora.">
+                            <h4>Oficialmente novios</h4>
+                            <p>24/12/2025</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    
+                    <p class="letter">
+                        Mi amor<br><br>
+                        Ya tenemos 3 años de habernos conocido y la verdad que en este tiempo que llevamos, cada día que pasa disfruto estar contigo mi amor por que para ser sincero pase lo que pase pasaré el resto de tus días para
+                        cuidarte y tenerte conmigo para toda la vida mi amor.<br><br>
+                        Este San Valentín solo quiero decirte: 
+                        TE AMO CON TODO MI CORAZÓN.<br><br>
+                        ¿Quieres seguir siendo mi San Valentín por siempre?<br><br>
+                        Con todo mi amor,<br>   
+                        Josué Espinoza
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="Foto del momento">
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+        <!-- MODAL PALABRAS SABIAS -->
+    <div id="modalSabias" class="modal">
+        <div class="modal-content">
+            <span class="close-sabias">×</span>
+            <h2 id="sabias-title">Palabras Sabias para mi Amor ❤️</h2>
+            <div id="sabias-text" class="sabias-text"></div>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
